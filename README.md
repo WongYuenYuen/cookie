@@ -9,9 +9,8 @@ cookie 能永久存储不可超过4k的字符串在浏览器上，并且跟后�
 2. 安全：
 - cookie不仅能设置值，也能设置domain和path，能根据domain和path向下获取cookie；
 - 后台可以设置cookie的http为true，那么客户端就不能读写该cookie；
-
-3. 不同协议、不同子域、主域、路径的都不能获取该部分的cookie
-- 🌰🌰🌰🌰
+- 不同协议、不同子域、主域、路径的都不能获取该部分的cookie
+🌰🌰🌰🌰
 - domain的🌰
 wap.yy.com和test.yy.com的能获取 .yy.com 的cookie
 但是test.yy.com的不能获取wap.yy.com的
@@ -21,7 +20,7 @@ wap.yy.com和test.yy.com的能获取 .yy.com 的cookie
 /task/test 不能获取 /task/hello的cookie
 
 
-4. 设置值时注意：
+3. 设置值时注意：
 - 值不能出现分号（;）
 - 只要设置的path不为 ‘／’，就会设置成当前path
 - 设置cookie domain不能设置成非当前页面的域名或者路径
